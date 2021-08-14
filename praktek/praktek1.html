@@ -6,12 +6,14 @@
 
   <body>
     <script>
+      //Awal
       var nama=prompt("Masukkan nama pengirim...");
       var nama1=prompt("Masukkan nama penerima...");
       var jarak=prompt("Jarak pengiriman...");
       var alamat=prompt("Alamat penerima...");
       var barang=prompt("Jenis barang...");
       var berat=prompt("Berat barang...");
+      //Rumus
       var biaya1= jarak * 10000;
       var biaya2= berat * 5000;
       var tambah= biaya1 + biaya2
@@ -27,6 +29,7 @@
       }
       }
 
+      //Tengah
       document.write("<br>Nama pengirim:", nama);
       document.write("<br>Nama penerima:", nama1);
       document.write("<br>Jarak pengiriman:", jarak);
@@ -34,6 +37,7 @@
       document.write("<br>Jenis barang:", barang);
       document.write("<br>Berat barang:", berat);
 
+      //Akhir
       var Biaya;
       if(tambah >= 150000){
           document.write("<br>Biaya:", +diskon(tambah));
