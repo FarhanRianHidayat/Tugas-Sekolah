@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<hmtl>
+  <head>
+  </head>
+
+  <body>
+    <script>
+      var nama=prompt("Masukkan nama pengirim...");
+      var nama1=prompt("Masukkan nama penerima...");
+      var jarak=prompt("Jarak pengiriman...");
+      var alamat=prompt("Alamat penerima...");
+      var barang=prompt("Jenis barang...");
+      var berat=prompt("Berat barang...");
+      var biaya1= jarak * 10000;
+      var biaya2= berat * 5000;
+      var tambah= biaya1 + biaya2
+      function diskon(tambah){
+			var diskon;
+      if(tambah >= 150000){
+        alert("Kamu mendapatkan diskon 15%")
+        var diskon= 0.15 * tambah;
+        hargadiskon= tambah - diskon;
+        return hargadiskon;
+      }else if(tambah < 150000){
+        alert("Kamu tidak dapat menggunakan diskon 15%")
+      }
+      }
+
+      document.write("<br>Nama pengirim:", nama);
+      document.write("<br>Nama penerima:", nama1);
+      document.write("<br>Jarak pengiriman:", jarak);
+      document.write("<br>Alamat penerima:", alamat);
+      document.write("<br>Jenis barang:", barang);
+      document.write("<br>Berat barang:", berat);
+
+      var Biaya;
+      if(tambah >= 150000){
+          document.write("<br>Biaya:", +diskon(tambah));
+      }else if(tambah < 150000){
+          document.write("<br>Biaya:", tambah)
+      }
+    </script>
+  </body>
+</hmtl>
