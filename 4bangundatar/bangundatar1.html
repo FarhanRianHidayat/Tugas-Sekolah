@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+            <title> Belajar if </title>
+    </head>
+
+    <body>
+
+            <script>
+                alert("Halo, aku akan bantu kamu menjawab rumus")
+                var pilihan=prompt("Luas Bangun datar apa yang kamu pilih: persegi panjang, persegi, segitiga, jajar genjang")
+                  if(pilihan == "persegi panjang"){
+                      var panjang = prompt('masukkan angka panjang')
+                      var lebar = prompt('masukkan angka lebar')
+                      var hasil = panjang*lebar
+                      document.write("<b>Persegi Panjang</b> <br>")
+                      document.write("Panjang:", panjang,)
+                      document.write("<br>Lebar:", lebar)
+                      document.write("<br>Hasil:", hasil)
+                  }else if(pilihan == "persegi"){
+                      var sisi1 = prompt('masukkan angka sisi1')
+                      var sisi2 = prompt('masukkan angka sisi2')
+                      var hasil = sisi1*sisi2
+                      document.write("<b>Persegi</b> <br>")
+                      document.write("Sisi1:", sisi1)
+                      document.write("<br>Sisi2:", sisi2)
+                      document.write("<br>Hasil:", hasil)
+                  }else if(pilihan == "segitiga"){
+                      var alas = prompt('masukkan angka alas')
+                      var tinggi = prompt('masukkan angka tinggi')
+                      var hasil = 2 / (alas*tinggi)
+                      document.write("<b>Segitiga</b> <br>")
+                      document.write("Alas:", alas)
+                      document.write("<br>Tinggi:", tinggi)
+                      document.write("<br>Hasil:", hasil)
+                  }else if(pilihan == "jajargenjang"){
+                      var alas = prompt('masukkan angka alas')
+                      var tinggi = prompt('masukkan angka tinggi')
+                      var hasil = alas*tinggi
+                      document.write("<b>Jajar Genjang</b> <br>")
+                      document.write("Alas:", alas)
+                      document.write("<br>Tinggi:", tinggi)
+                      document.write("<br>Hasil:", hasil)
+                  }else{
+                      alert("kamu belum memasukkan angka")
+                  }
+                  alert('Terima kasih, telah menggunakanku ')
+            </script>
+    </body>
+</html>
