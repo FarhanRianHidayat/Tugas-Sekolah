@@ -1,98 +1,99 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-    </head>
 
-    <body>
-        <script>
-            //1. Push
-            //Push digunakan untuk menambahkan nilai dibagian belakang array.
-            //Saat kita menggunakan push kata atau angka yang kita tambah akan muncul diakhir.
-            var hewan = ["Monyet","Buaya","Jerapah","Harimau"];
-            hewan.push("Koala");
-            document.write(hewan); // maka akan seperti ini ["Monyet","Buaya","Jerapah","Harimau","Koala"]
+<head>
+</head>
 
-            //2. Pop
-            //Pop digunakan untuk menghapus nilai terakhir di dalam array.
-            //Saat kita menggunakan pop kata atau angka yang terakhir didalam array akan dihapus.
-            var buah = ["Anggur","Apel","Semangka","Mangga","Jambu"];
-            buah.pop();
-            document.write(buah); // maka akan seperti ini ["Anggur","Apel","Semangka","Mangga",]
+<body>
+    <script>
+        //1. Push
+        //Push digunakan untuk menambahkan nilai dibagian belakang array.
+        //Saat kita menggunakan push kata atau angka yang kita tambah akan muncul diakhir.
+        var hewan = ["Monyet", "Buaya", "Jerapah", "Harimau"];
+        hewan.push("Koala");
+        document.write(hewan); // maka akan seperti ini ["Monyet","Buaya","Jerapah","Harimau","Koala"]
 
-            //3. Sort
-            //Sort digunakan untuk mengurutkan data didalam arry sesuai dengan abjad.
-            //Saat kita menggunakan Sort kata yang ada didalam array jadi berurutan.
-            var nama = ["Dimas","Caca","Abdul","Eva","Beni"];
-            nama.sort();
-            document.write(nama)  // maka akan seperti ini ["Abdul","Beni","Caca","Dimas","Eva"]
+        //2. Pop
+        //Pop digunakan untuk menghapus nilai terakhir di dalam array.
+        //Saat kita menggunakan pop kata atau angka yang terakhir didalam array akan dihapus.
+        var buah = ["Anggur", "Apel", "Semangka", "Mangga", "Jambu"];
+        buah.pop();
+        document.write(buah); // maka akan seperti ini ["Anggur","Apel","Semangka","Mangga",]
 
-            //4. Shift
-            //Shift digunakan untuk menghapus kata atau angka yang pertama di array akan dihapus.
-            //Saat kita menggunakan Shift kata atau angka yang ada didalam array dihapus.
-            var buah1 = ["Belimbing","Salak","Rambutan","Alpukat","Pepaya"];
-            buah1.shift();
-            document.write(buah1) // maka akan ["Salak","Rambutan","Alpukat","Pepaya"]
+        //3. Sort
+        //Sort digunakan untuk mengurutkan data didalam arry sesuai dengan abjad.
+        //Saat kita menggunakan Sort kata yang ada didalam array jadi berurutan.
+        var nama = ["Dimas", "Caca", "Abdul", "Eva", "Beni"];
+        nama.sort();
+        document.write(nama) // maka akan seperti ini ["Abdul","Beni","Caca","Dimas","Eva"]
 
-            //5. Unshift
-            //Unshift digunakan untuk menambahkan nilai dibagian depan array.
-            //Saat kita menggunakan Unshift kata atau angka yang kita tambah akan muncul didepan.
-            var hewan1 = ["Badak","Gajah","Burung unta","Uler"];
-            hewan1.unshift("Singa");
-            document.write(hewan1); // maka akan seperti ini ["Singa","Badak","Burung unta","Uler"]
+        //4. Shift
+        //Shift digunakan untuk menghapus kata atau angka yang pertama di array akan dihapus.
+        //Saat kita menggunakan Shift kata atau angka yang ada didalam array dihapus.
+        var buah1 = ["Belimbing", "Salak", "Rambutan", "Alpukat", "Pepaya"];
+        buah1.shift();
+        document.write(buah1) // maka akan ["Salak","Rambutan","Alpukat","Pepaya"]
 
-            //6. Reverse
-            //Reverse digunakan untuk membalikkan atau 
-            //mengurutkan dari data yang paling terakhir menjadi data yang paling awal.
-            //Saat kita menggunakan Reverse kata atau angka yang terakhir menjadi didepan.
-            var angka = ["100","90","80","70","60","50","40","30","20","10"];
-            angka.reverse();
-            document.write(angka) // maka akan seperti ini [10,20,30,40,50,60,70,80,90,100]
+        //5. Unshift
+        //Unshift digunakan untuk menambahkan nilai dibagian depan array.
+        //Saat kita menggunakan Unshift kata atau angka yang kita tambah akan muncul didepan.
+        var hewan1 = ["Badak", "Gajah", "Burung unta", "Uler"];
+        hewan1.unshift("Singa");
+        document.write(hewan1); // maka akan seperti ini ["Singa","Badak","Burung unta","Uler"]
 
-            //7. Length
-            //Length digunakan untuk melihat jumlah nilai yang ada didalam array.
-            //Saat menggunakan Length akan menjumlah nilai yang ada didalam array.
-            var siswa = ["siti","Sifa","Syahreza","dimas"];
-            siswa.length;
-            console.log(siswa); // maka akan seperti ini inputnya 5
+        //6. Reverse
+        //Reverse digunakan untuk membalikkan atau 
+        //mengurutkan dari data yang paling terakhir menjadi data yang paling awal.
+        //Saat kita menggunakan Reverse kata atau angka yang terakhir menjadi didepan.
+        var angka = ["100", "90", "80", "70", "60", "50", "40", "30", "20", "10"];
+        angka.reverse();
+        document.write(angka) // maka akan seperti ini [10,20,30,40,50,60,70,80,90,100]
 
-            //8. Join
-            //Join digunakan untuk memberikan karakter pembatas untuk menyatukan nilai array yang terpisah.
-            //Saat kita menggunakan Join kata atau angka yang ada didalam array akan tersambung oleh karakter yang kita pilih.
-            var nama1 = ["Lala","Fatir","Zainal","ali"];
-            document.write(nama1.join("-")); // maka akan seperti ini Lala-Fatir-Zainal-ali
+        //7. Length
+        //Length digunakan untuk melihat jumlah nilai yang ada didalam array.
+        //Saat menggunakan Length akan menjumlah nilai yang ada didalam array.
+        var siswa = ["siti", "Sifa", "Syahreza", "dimas"];
+        siswa.length;
+        console.log(siswa); // maka akan seperti ini inputnya 5
 
-            //9. Filter
-            //Filter digunakan untuk menghilangkan nilai yang tidak kita inginkan.
-            //Saat kita menggunakan Filter kita bisa menghilangkan angka genap dan ganjil didalam array.
-            //menghilangkan angka genap
-            var angka1 = [1,2,3,4,5,6,7,8,9,10];
-            var angkasaya = [];
-            for(i = 0; i< angka1.length; i++){
-                if(angka1[i] % 2 !== 0) {
-                    angkasaya[i] = angka1[i];
-                }
+        //8. Join
+        //Join digunakan untuk memberikan karakter pembatas untuk menyatukan nilai array yang terpisah.
+        //Saat kita menggunakan Join kata atau angka yang ada didalam array akan tersambung oleh karakter yang kita pilih.
+        var nama1 = ["Lala", "Fatir", "Zainal", "ali"];
+        document.write(nama1.join("-")); // maka akan seperti ini Lala-Fatir-Zainal-ali
+
+        //9. Filter
+        //Filter digunakan untuk menghilangkan nilai yang tidak kita inginkan.
+        //Saat kita menggunakan Filter kita bisa menghilangkan angka genap dan ganjil didalam array.
+        //menghilangkan angka genap
+        var angka1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        var angkasaya = [];
+        for (i = 0; i < angka1.length; i++) {
+            if (angka1[i] % 2 !== 0) {
+                angkasaya[i] = angka1[i];
             }
-            document.write(angkasaya) // maka akan seperti ini ["1",empty,"3",empty,"5",empty,"7",empty,"9",empty]
+        }
+        document.write(angkasaya) // maka akan seperti ini ["1",empty,"3",empty,"5",empty,"7",empty,"9",empty]
 
-            //menghilangkan angka ganjil
-            var angka1 = [1,2,3,4,5,6,7,8,9,10];
-            var angkasaya = [];
-            for(i = 1; i< angka1.length; i++){
-                if(angka1[i] % 2 !== 1) {
-                    angkasaya[i] = angka1[i];
-                }
+        //menghilangkan angka ganjil
+        var angka1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        var angkasaya = [];
+        for (i = 1; i < angka1.length; i++) {
+            if (angka1[i] % 2 !== 1) {
+                angkasaya[i] = angka1[i];
             }
-            document.write(angkasaya) // maka akan seperti ini [empty,2,empty,4,empty,6,empty,8,empty,10]
+        }
+        document.write(angkasaya) // maka akan seperti ini [empty,2,empty,4,empty,6,empty,8,empty,10]
 
 
-            //10. Concat
-            //Concat digunakan untuk menggabungkan 2 array atau lebih.
-            //saat kita menggunakan Concat 2 array atau lebih akan menyatu.
-            var nama2 = ["Ali","Alvin","Ghina","Farhan","Aisyah"];
-            var angka2 = ["1","2","3","4","5"];
-            document.write(nama2.concat(angka2)); //maka akan seperti ini [Ali,Alvin,Ghina,Farhan,Aisyah,1,2,3,4,5]
+        //10. Concat
+        //Concat digunakan untuk menggabungkan 2 array atau lebih.
+        //saat kita menggunakan Concat 2 array atau lebih akan menyatu.
+        var nama2 = ["Ali", "Alvin", "Ghina", "Farhan", "Aisyah"];
+        var angka2 = ["1", "2", "3", "4", "5"];
+        document.write(nama2.concat(angka2)); //maka akan seperti ini [Ali,Alvin,Ghina,Farhan,Aisyah,1,2,3,4,5]
+    </script>
+</body>
 
-        </script>
-    </body>
 </html>
